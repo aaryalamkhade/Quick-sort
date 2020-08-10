@@ -8,11 +8,11 @@ int partition(int arr[],int x,int y)
 	
 	while(low<=high)
 	{   
-		while(pivote<arr[low])
+		while(pivote>arr[low])
 		{
 	     low++;
 		}
-		while(pivote>arr[high])
+		while(pivote<arr[high])
 		{
 			high--;
 		}
@@ -54,6 +54,7 @@ int main()
 	cin>>arr[i];
 }
 quicksort(arr,0,n-1);
+cout<<"Sorted array :";
 for(int i=0;i<n;i++)
 {
 	cout<<arr[i];
